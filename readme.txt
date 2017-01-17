@@ -11,7 +11,7 @@ Clients must authenticate using HTTP Digest userid=admin password=password
 
 An end user can use a web browser to access the application at http://127.0.0.1:8080/
 End users can authenticate to the application using userid admin password password.
-They will be directed to a search form to type int he city name in any case.
+They will be directed to a search form to type in the city name in any case.
 When they click Search an html table showing the ATM's in that city will be presented.
 
 They can then click on a link to do another search or logout.
@@ -19,11 +19,11 @@ They can then click on a link to do another search or logout.
 
 
 Compiled using java version 1.8.0_91 on Windows XP
-make sure to set the JAVA_HOME environment variable to the jdk installation and MAVAN_HOME to the location of Mave.
+make sure to set the JAVA_HOME environment variable to the jdk installation and MAVEN_HOME to the location of Maven.
 
+Include the location of javac in the JDK in the system path.
 
-
-Install Maven version 3.3.9 and add \bin directory to path.
+Install Maven version 3.3.9 and add \bin directory to system path.
 
 
 For SonarQube code coverage and quality reporting install SonarQube server and run on port 9000.
@@ -40,7 +40,7 @@ mvn package (to create target/devtest.war that can be deployed into webapps on t
 
 The Jetty plugin is configured to run tomcat via maven. To start tomcat on port 8080 run
 mvn jetty:run
-then login using your web browser tohttp://127.0.0.1/
+then login using your web browser toh ttp://127.0.0.1:8080/
 
 A uml class diagram is available at src/main/documentation/class_diagram.pdf
 The site documentation is available at target/site/index.html
