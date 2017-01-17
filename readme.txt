@@ -9,7 +9,7 @@ The Camel service will stop when the web application is redeployed, undeployed o
 A JSON formatted list of ATMS by city REST service is implemented at http://127.0.0.1:8080/api/locator/ATM?city=cityname
 Clients must authenticate using HTTP Digest userid=admin password=password
 
-An end user can use a web browser to access the application at http://127.0.0.1/
+An end user can use a web browser to access the application at http://127.0.0.1:8080/
 End users can authenticate to the application using userid admin password password.
 They will be directed to a search form to type int he city name in any case.
 When they click Search an html table showing the ATM's in that city will be presented.
@@ -35,6 +35,8 @@ mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.fail
 mvn jacoco:prepare-agent test jacoco:report   (for code coverage report)
 mvn sonar:sonar   (to store and process code quality report 
 mvn javadoc:javadoc (to generate source documentation)
+mvn site (to generate site documentation)
+mvn package (to create target/devtest.war that can be deployed into webapps on tomcat server)
 
 The Jetty plugin is configured to run tomcat via maven. To start tomcat on port 8080 run
 mvn jetty:run
