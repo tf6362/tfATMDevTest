@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-86.75" y="84.0">com.backbase.devtest.ATMManager</node>
+    <node x="-177.0" y="340.0">com.backbase.devtest.GeoLocation</node>
+    <node x="147.0" y="-14.0">com.backbase.devtest.ATMManager.ATMProcessor</node>
+    <node x="-125.0" y="-9.0">com.backbase.devtest.ATMManager.ATMTransformRoute</node>
+    <node x="-40.0" y="199.0">com.backbase.devtest.ATM</node>
+    <node x="176.0" y="322.0">com.backbase.devtest.Address</node>
+    <node x="-329.0" y="118.0">com.backbase.devtest.ATMController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.backbase.devtest.ATMManager" target="com.backbase.devtest.ATMManager.ATMTransformRoute">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATM" target="com.backbase.devtest.Address">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATMManager.ATMTransformRoute" target="com.backbase.devtest.ATMManager">
+      <point x="0.0" y="-14.0" />
+      <point x="66.5" y="93.0" />
+      <point x="86.25" y="93.0" />
+      <point x="-49.0" y="34.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATMManager" target="com.backbase.devtest.ATM">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATMController" target="com.backbase.devtest.ATMManager">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATMManager.ATMProcessor" target="com.backbase.devtest.ATMManager">
+      <point x="0.0" y="-14.0" />
+      <point x="204.0" y="93.0" />
+      <point x="184.25" y="93.0" />
+      <point x="49.0" y="34.0" />
+    </edge>
+    <edge source="com.backbase.devtest.ATMManager.ATMTransformRoute" target="com.backbase.devtest.ATMManager.ATMProcessor">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.backbase.devtest.Address" target="com.backbase.devtest.GeoLocation">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.5" y="-20.0" />
+  <SelectedNodes>
+    <node>com.backbase.devtest.ATM</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
