@@ -40,7 +40,7 @@ mvn package (to create target/devtest.war that can be deployed into webapps on t
 
 The Jetty plugin is configured to run tomcat via maven. To start tomcat on port 8080 run
 mvn jetty:run
-then login using your web browser toh ttp://127.0.0.1:8080/
+then login using your web browser to http://127.0.0.1:8080/
 
 A uml class diagram is available at src/main/documentation/class_diagram.pdf
 The site documentation is available at target/site/index.html
