@@ -34,6 +34,7 @@ mvn clean
 mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install -Dmaven.test.failure.ignore=true (for code coverage report)
 mvn jacoco:prepare-agent test jacoco:report   (for code coverage report)
 mvn sonar:sonar   (to store and process code quality report 
+mvn javadoc:javadoc (to generate source documentation)
 
 The Jetty plugin is configured to run tomcat via maven. To start tomcat on port 8080 run
 mvn jetty:run
